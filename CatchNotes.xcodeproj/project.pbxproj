@@ -20,6 +20,7 @@
 		042A01CF205ACB6B00D20F6F /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 042A01CE205ACB6B00D20F6F /* GameplayScene.sks */; };
 		042A01D1205ACB8A00D20F6F /* GameplaySceneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A01D0205ACB8A00D20F6F /* GameplaySceneClass.swift */; };
 		042A01D4205AE06000D20F6F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A01D3205AE06000D20F6F /* Player.swift */; };
+		042A01D7205AEED900D20F6F /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A01D6205AEED900D20F6F /* ItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		042A01CE205ACB6B00D20F6F /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		042A01D0205ACB8A00D20F6F /* GameplaySceneClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplaySceneClass.swift; sourceTree = "<group>"; };
 		042A01D3205AE06000D20F6F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		042A01D6205AEED900D20F6F /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		042A01CA205ACA9500D20F6F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				042A01D5205AEEB700D20F6F /* ItemsControllerClasses */,
 				042A01D2205AE04100D20F6F /* Player Class */,
 				042A01CB205ACA9A00D20F6F /* SceneClasses */,
 			);
@@ -173,6 +176,14 @@
 				042A01D3205AE06000D20F6F /* Player.swift */,
 			);
 			path = "Player Class";
+			sourceTree = "<group>";
+		};
+		042A01D5205AEEB700D20F6F /* ItemsControllerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				042A01D6205AEED900D20F6F /* ItemController.swift */,
+			);
+			path = ItemsControllerClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 				042A019A205AC93E00D20F6F /* GameViewController.swift in Sources */,
 				042A0192205AC93E00D20F6F /* AppDelegate.swift in Sources */,
 				042A01D4205AE06000D20F6F /* Player.swift in Sources */,
+				042A01D7205AEED900D20F6F /* ItemController.swift in Sources */,
 				042A01D1205ACB8A00D20F6F /* GameplaySceneClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
