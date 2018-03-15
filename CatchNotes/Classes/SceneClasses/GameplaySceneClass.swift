@@ -92,6 +92,8 @@ class GameplaySceneClass : SKScene, SKPhysicsContactDelegate {
         
         Timer.scheduledTimer(timeInterval: TimeInterval(itemController.randomBetweennumbers(firstNum: 1, secondNum: 2)), target: self, selector: #selector(GameplaySceneClass.spawnItems), userInfo: nil, repeats: true)
         
+        Timer.scheduledTimer(timeInterval: TimeInterval(7), target: self, selector: #selector(GameplaySceneClass.removeItems), userInfo: nil, repeats: true)
+        
     }
     
     
@@ -116,6 +118,18 @@ class GameplaySceneClass : SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    @objc func removeItems(){
+        
+        for child in children{
+            if child.name == "Note" || child.name == "Bomb" {
+                if child.position.y < -self.scene!.frame.height - 100 {
+                    
+                    child.removeFromParent()
+                    
+                }
+            }
+        }
+    }
     
 }// class
 
