@@ -10,10 +10,16 @@ import SpriteKit
 
 class Player: SKSpriteNode {
     
+    func move (left: Bool){
+        if left{
+            position.x -= 15;
+        }else{
+            position.x += 15;
+        }
+    }
     
     
-    
-}
+}// class 
 
 
 
