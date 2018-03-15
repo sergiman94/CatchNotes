@@ -18,6 +18,9 @@ class GameplaySceneClass : SKScene, SKPhysicsContactDelegate {
     
     private var itemController = ItemController()
     
+    private var scoreLabel = SKLabelNode()
+    private var score = 0
+    
     override func didMove(to view: SKView) {
         initializeGame()
     }
@@ -61,6 +64,10 @@ class GameplaySceneClass : SKScene, SKPhysicsContactDelegate {
         
         if firstBody.node?.name == "Player" && secondBody.node?.name == "Note"{
             
+            score += 1
+            scoreLabel.text = String(score)
+            secondBody.node?.removeFromParent()
+            
         }
         
         if firstBody.node?.name == "Player" && secondBody.node?.name == "Bomb"{
@@ -78,6 +85,8 @@ class GameplaySceneClass : SKScene, SKPhysicsContactDelegate {
         
         player = childNode(withName: "Player") as? Player!
         player?.initializePlayer()
+        
+        scoreLabel = (childNode(withName: "ScoreLabel") as? SKLabelNode!)!
         
         center = self.frame.size.width / self.frame.size.height
         
